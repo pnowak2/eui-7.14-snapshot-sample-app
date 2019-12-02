@@ -1,0 +1,13 @@
+<ecl-app-shell-standardised
+    [breadcrumbs]="breadcrumbs"
+    [languageCodes]="['en', 'fr']"
+    siteHeaderSiteName="eUI/ECL integration"
+    pageHeaderTitle="Hello ECL application"
+    (siteHeaderSearch)="onSiteHeaderSearch($event)">
+
+    <a *eclSlot="'site-header-class-name'" eclLink variant="standalone" href="https://ec.europa.eu/component-library">
+        Europa Component Library
+    </a>
+
+    <router-outlet></router-outlet>
+</ecl-app-shell-standardised>
